@@ -27,7 +27,7 @@ function isEmpty() {
 
 if (signupBtn) {
     signupBtn.addEventListener('click', function () {
-        if (validName && validEmail && validPassword) {
+        if (validName & validEmail & validPassword) {
             var user = {
                 username: signupName.value,
                 email: signupEmail.value,
