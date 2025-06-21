@@ -27,7 +27,7 @@ function isEmpty() {
 
 if (signupBtn) {
     signupBtn.addEventListener('click', function () {
-        if (validEmail && validName && validPassword) {
+        if (validName && validEmail && validPassword) {
             var user = {
                 username: signupName.value,
                 email: signupEmail.value,
@@ -138,6 +138,8 @@ function validateName(username) {
             signupName.classList.add("is-valid");
             signupName.classList.remove("is-invalid");
             validName = true;
+            console.log(validName);
+            
         } else {
             signupName.classList.add("is-invalid");
             signupName.classList.remove("is-valid");
